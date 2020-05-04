@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>COVID Database Collection</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="DATABASE">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    
+  </head>
+
+  <body>
+
+    <header>
+      <div class="wra1">
+        <h2 class="nombre"> Grupo de Interaccion Robotica y Automatica - GIIRA</h2>
+        <hr/>
+      </div>
+      <div class="wra2">
+        <h1 class="titulo"> Recolección de Base de Datos - COVID-19</h1>
+      </div>
+    </header>
+
+    <main>
+      <div class="wra3">
+        <h3>OBJETIVO</h3>
+        <p class="obj"> Somos un Grupo de Investigacion perteneciente a la Universidad Politecnica Salesiana y nuestro objetivo con este proyecto es formar una base de datos de <b>Grabaciones de Tos</b> para desarrollar un sistema capaz de realizar la detección de COVID-19</p>
+      </div>
+
+      <div class="wra4">
+        <h3 class="titinst">INSTRUCCIONES</h3>
+        <hr/>
+      </div>
+      <p class="ins">Si deseas proporcionar tu ayuda con tus datos a este proyecto realiza una grabacion de tu tos</p>
+
+      <div class="wra4">
+        <h3 class="titinst">CONFIDENCIALIDAD</h3>
+        <hr/>
+      </div>
+      <p class="ins">Tus datos seran guardados....</p>
+
+      <div class="wra4">
+        <h3 class="titinst">GRABACION</h3>
+        <hr/>
+      </div>
+
+      <div>
+        <center>
+        <table>
+          <tr>
+            <td>Nombre :</td>
+            <td><input type="text" name=""></td>
+          </tr>
+          <tr>
+            <td>Apellido :</td>
+            <td><input type="text" name=""></td>
+          </tr>
+          <tr>
+            <td>Edad :</td>
+            <td><input type="text" name=""></td>
+          </tr>
+          <tr>
+            <td>Provincia :</td>
+            <td><input type="text" name=""></td>
+          </tr>
+          <tr>
+            <td>Genero :</td>
+            <td><input type="radio" name="Genero">Masculino<input type="radio" name="Genero">Femenino</td>
+          </tr>
+        </table>
+      </center>
+      </div>
+    </main>
+  </body>
+
+  <footer>
+    <center>
+    <div id="controls">
+      <button id="recordButton">Record</button>
+      <button id="pauseButton" disabled>Pause</button>
+      <button id="stopButton" disabled>Stop</button>
+    </div>
+    <div id="formats"></div>
+    <ol id="recordingsList"></ol>
+    <!-- inserting these scripts at the end to be able to use all the elements in the DOM -->
+    <script src="https://cdn.rawgit.com/mattdiamond/Recorderjs/08e7abd9/dist/recorder.js"></script>
+    <script src="app.js"></script>
+  </center>
+  </footer>
+
+
+</html>
